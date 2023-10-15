@@ -1,0 +1,27 @@
+ <div class= topBox>
+     <form action="/" method="POST">
+      <button class="btn btn-primary btn-sm"" type="submit" value="week" name="week"/>week</button>
+      <button class="btn btn-primary btn-sm" type="submit" value="today" name="today"/>today</button>
+    </form>
+   
+  
+     <form class= textBox action="/submit" method="POST">
+      <input type="text"  name="newToDo" placeholder="  Item" required/>
+      <input type="submit" class="btn btn-success" value="Add" />
+      
+    </form> 
+    </div>
+ <div class= listBox>
+
+ <divclass= box>
+    
+      <%today.forEach((item)=> { %>
+        <li class= item >
+        <input type="checkbox">
+          <%=item %>
+        </li>
+        <%}) %>
+
+    </div>
+</div>
+

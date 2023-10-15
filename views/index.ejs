@@ -1,0 +1,37 @@
+
+<%- include("partials/header.ejs")%>
+
+
+   <section id="hero" class="hero-bg">
+      <div class="px-4 py-5 my-3 text-center">
+        <h1 class="display-5 fw-bold text-body-emphasis">To Do List: <% if (currentList === "todayList") { %>
+    Today
+  <%} else {%>
+    This week
+   <% } %></h1>
+      </div>
+    </section>
+
+
+
+
+
+<div class=topBox>
+<% if (currentList === "todayList") { %>
+    <h2><%= date%></h2>
+  <%}  %></h1>
+ 
+</div>
+
+<%- include(currentList+".ejs") %> 
+
+
+
+  
+<%- include("partials/footer.ejs")%>
+
+ <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
